@@ -7,10 +7,10 @@
   
 # Pull this repository and Fill in the blanks in Readme File alongwith:
 
-Name: 
-Roll No:
-SAPID: 
-Batch:
+Name:Shashwat Tiwari 
+Roll No:37
+SAPID:500062208
+Batch:2
 Question Assigned: 
 
 
