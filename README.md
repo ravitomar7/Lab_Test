@@ -7,11 +7,11 @@
   
 # Pull this repository and Fill in the blanks in Readme File alongwith:
 
-Name: 
-Roll No:
-SAPID: 
-Batch:
-Question Assigned: 
+Name: Rahul jain
+Roll No:82
+SAPID: 500062969
+Batch:b3
+Question Assigned: 1,2
 
 
 # How to code?
@@ -35,6 +35,66 @@ Question Assigned:
               MAX Allowable time with marks deduction is 1 Hour.
               
 All the Best!!
+
+
+Answer of question 1:
+package com;
+public class Javatest {
+		public boolean inOrderEqual(int a,int b,int c, boolean equalOk){  
+		    if(a==b && b==c){
+		    	equalOk= true;
+		    	return equalOk;	}
+		    else{
+			if(a>b && a>c)
+		    	 return equalOk;
+		       else if(b>a && b>c)
+		    	   return false;
+		       else if(c>a && c>b){
+		    	   if(a>b)
+		    	     return equalOk;
+		    	   else{
+		    		   equalOk=true;
+		    		 return  equalOk; 
+		    	   }
+		       }
+}
+			return equalOk;
+}
+	public static void main(String[] args) {
+		boolean k;
+		Javatest obj = new Javatest(); 
+		k= obj.inOrderEqual(5,5,7,false);
+		System.out.println(k);	
+	}
+}
+
+
+Answer of question 2:
+package com;
+
+public class Javatest2 {
+
+	public boolean makeBricks(int small, int big, int goal)
+	{
+		int mg = goal/5;
+		if(mg <= big)
+			goal -= mg*5;
+		else
+			goal -= big*5;
+		if(goal <= small)
+			return true;
+		else
+		return false;
+	}
+	public static void main(String args[])
+	{
+		boolean d;
+		Javatest2 b=new Javatest2();
+		d=b.makeBricks(1, 5, 3);
+		System.out.println(d);
+	}
+
+}
 
 
 
