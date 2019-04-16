@@ -3,15 +3,15 @@
 > x Questions will be given on the day of the test.
 
 > Pick question according to your roll number: 
-  for e.g if x=4 and last three digit of your roll no are 123 then your question no is (1+2+3)%4 + 1 = 3
+  for e.g if x=4 and last three digit of your roll no are 123 then your question no is (1+2+3)%4 = 2
   
 # Pull this repository and Fill in the blanks in Readme File alongwith:
 
-Name: SAMBBHAV GARG
-Roll No: R103217092
-SAPID: 500061353
-Batch: B3
-Question Assigned: Q3, Q4
+Name: 
+Roll No:
+SAPID: 
+Batch:
+Question Assigned: 
 
 
 # How to code?
