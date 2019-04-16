@@ -1,0 +1,12 @@
+public class Bricks_prob {
+
+	public boolean makeBricks(int small, int big, int goal){
+    return (goal%5)<=small and (goal-(big*5))<=small;
+	}
+	public static void main(String[] args) {
+		Bricks_prob b = new Bricks_prob();
+		System.out.println(b.makeBricks(7, 1, 13));
+
+	}
+
+}
