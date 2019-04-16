@@ -1,0 +1,19 @@
+public class testq1{
+public boolean inOrderEqual(int a, int b, int c, boolean equalOk)
+{
+if (!equalOk && a < b && b < c)
+return true;
+if (equalOk && a <= b && b <= c)
+return true;
+else
+return false;
+}
+public static void main(String[] args){
+boolean z;
+testq1 a=new testq1();
+z=a.inOrderEqual(5,8,7,true);
+System.out.println(z);
+}
+}
+
+ 
