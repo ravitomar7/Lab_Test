@@ -1,0 +1,21 @@
+
+public class Functions11 {
+
+	public boolean inOrderEqual(int a, int b, int c, boolean equalOk)
+
+	{
+		if(equalOk)
+
+			return (a <= b && b <= c && a<=c);
+
+		return (a<b && b<c && a<c);
+
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      Functions11 obj= new Functions11();
+      System.out.println(obj.inOrderEqual(2, 4, 8, true));
+      
+	}
+
+}
