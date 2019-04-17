@@ -1,37 +1,75 @@
 package com.ogi.R_37;
+
 import java.util.Scanner;
-public class Exam1 
+ class Exam1
 {
-	static boolean inOrderEqual(int a, int b, int c, boolean equalOk) {
-		  if (!equalOk && a < b && b < c)
-		    return true;
-		  if (equalOk && a <= b && b <= c)
-		    return true;
-		  else
-		    return false;
+	public static void main(String args[])
+    {
+		System.out.println("Enter The Value For N :");
+
+		Scanner sc = new Scanner(System.in);
+
+		int n = sc.nextInt();
+
+		int[][] spiral = new int[n][n];
+
+		int value = 1;
+
+		int minCol = 0;
+
+		int maxCol = n-1;
+
+		int minRow = 0;
+
+		int maxRow = n-1;
+
+		while (value <= n*n)
+		{
+			for (int i = minCol; i <= maxCol; i++)
+			{
+				spiral[minRow][i] = value;
+
+				value++;
+			}
+
+			for (int i = minRow+1; i <= maxRow; i++)
+			{
+				spiral[i][maxCol] = value;
+
+				value++;
+			}
+
+			for (int i = maxCol-1; i >= minCol; i--)
+			{
+				spiral[maxRow][i] = value;
+
+				value++;
+			}
+
+			for (int i = maxRow-1; i >= minRow+1; i--)
+			{
+				spiral[i][minCol] = value;
+
+				value++;
+			}
+
+			minCol++;
+
+			minRow++;
+
+			maxCol--;
+
+			maxRow--;
 		}
 
-	public static void main(String args[])
-	{
-		int a;
-		int b;
-		int c;
-		char ch;
-		String ar;
-		boolean equalOk;
-		Scanner obj=new Scanner(System.in);
-		System.out.println("Enter three numbers");
-		a=obj.nextInt();
-		b=obj.nextInt();
-		c=obj.nextInt();
-		System.out.println("equal ok is true?-y/n");
-		ar=obj.next();
-		ch=ar.charAt(0);
-		if(ch=='y'||ch=='Y')
-			equalOk=true;
-		else
-			equalOk=false;
-		System.out.println(inOrderEqual(a,b,c,equalOk));
-		
-}
+		for (int i = 0; i < spiral.length; i++)
+		{
+			for (int j = 0; j < spiral.length; j++)
+			{
+				System.out.print(spiral[i][j]+ "\t");
+			}
+
+			System.out.println();
+		}
+    }
 }
