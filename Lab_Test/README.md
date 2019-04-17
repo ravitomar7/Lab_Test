@@ -7,34 +7,40 @@
   
 # Pull this repository and Fill in the blanks in Readme File alongwith:
 
-Name: 
-Roll No:
-SAPID: 
-Batch:
+Name: Siddarth Kumar Jha
+Roll No: 40
+SAPID: 500062053
+Batch:B2
 Question Assigned: 
 
 
 # How to code?
 
-* Use proper coding ethics.
-* Use Package.
-* Use Access Modifiers Properly.
-* Different file for each class.
-* Folder hierachy: 
-                  src/com/bao/<your_roll_no>/<your_class.java>
-                  bin/com/bao/<your_roll_no>/<your_class.class>
-                  
-* To do all above Code in Eclipse and commit in your own repository you pulled earlier.
-* Raise a merge request(thru github webpage) to me and add screenshot of output withit.
-* Request should be raised within Lab timing. i.e 
+package com.ogi;
 
-              # B4 BAO - 15 April 2019 11:30-13:30Hrs
-              # B3 BAO - 16 April 2019 09:30-11:30Hrs
-              # B3 OGI - 17 April 2019 09:30-11:30Hrs
-              
-              MAX Allowable time with marks deduction is 1 Hour.
-              
-All the Best!!
+public class A 
+{
+	public static void main(String[] args)
+	{
+		System.out.println("We will be checking the number preceding is greater or not");
+		A obj=new A();   //object is created
+		boolean x=obj.inOrderEqual(2, 5, 11, true);   //boolean object type and method calling
+		System.out.println(x+"   -The values were 2,5,11");
+		System.out.println("Aim accomplished");
+		
+	}
+	public boolean inOrderEqual(int a,int b,int c,boolean equalOk)
+	{
+		if(equalOk)
+		{
+			return (a <= b && b <= c);	
+		}
+		return (a < b && b < c);   //boolean return type
+	}
+
+}
+
+
 
 
 
