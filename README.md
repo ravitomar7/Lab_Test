@@ -7,11 +7,11 @@
   
 # Pull this repository and Fill in the blanks in Readme File alongwith:
 
-Name: 
-Roll No:
-SAPID: 
-Batch:
-Question Assigned: 
+Name: Satyapathi Maurya
+Roll No:36
+SAPID: 500063101
+Batch:B2
+Question Assigned: ques.2
 
 
 # How to code?
