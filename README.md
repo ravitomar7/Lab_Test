@@ -27,7 +27,7 @@ public class MainClass
 		int maxCol = n-1;
 
 		int minRow = 0;
-
+.
 		int maxRow = n-1;
 
 		while (value <= n*n)
