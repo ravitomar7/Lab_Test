@@ -1,40 +1,70 @@
 # Lab-Test
 
-> x Questions will be given on the day of the test.
-
-> Pick question according to your roll number: 
-  for e.g if x=4 and last three digit of your roll no are 123 then your question no is (1+2+3)%4 + 1 = 3
-  
-# Pull this repository and Fill in the blanks in Readme File alongwith:
-
-Name: 
-Roll No:
-SAPID: 
-Batch:
-Question Assigned: 
 
 
-# How to code?
+Name: Shivani Agarwal
+Roll No:38
+SAPID: 500059977
+Batch:2
+Question Assigned: 4
 
-* Use proper coding ethics.
-* Use Package.
-* Use Access Modifiers Properly.
-* Different file for each class.
-* Folder hierachy: 
-                  src/com/bao/<your_roll_no>/<your_class.java>
-                  bin/com/bao/<your_roll_no>/<your_class.class>
-                  
-* To do all above Code in Eclipse and commit in your own repository you pulled earlier.
-* Raise a merge request(thru github webpage) to me and add screenshot of output withit.
-* Request should be raised within Lab timing. i.e 
+package com.ogi.rollno_38;
+import java.util.Scanner;
+public class Anagrams
+{
+    public static void main(String args[])
+    {
+        String st1, st2;
+        int l, lst1, lst2, i, j, get=0, not_get=0;
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Enter first string to check for anagram :");
+        st1 = sc.nextLine();
+        System.out.print("Enter second string to check for anagram :");
+        st2 = sc.nextLine();
+        
+        lst1 = st1.length();
+        lst2 = st2.length();
+		
+        if(lst1 == lst2)
+        {
+            l = lst1;
+            for(i=0; i<l; i++)
+            {
+                get = 0;
+                for(j=0; j<l; j++)
+                {
+                    if(st1.charAt(i) == st2.charAt(j))
+                    {
+                        get = 1;
+                        break;
+                    }
+                }
+                if(get == 0)
+                {
+                    not_get = 1;
+                    break;
+                }
+            }
+            if(!(not_get == 1))
+            {
+                System.out.println("Strings are Anagram");
+            }
+            else
+            {
+                System.out.println("Strings are not Anagram to each other");
+            }
+        }
+        else
+        {
+            System.out.println("Both Strings Must have the same number of Character and length should be equal to be an Anagram");
+        }
+    }
+}
 
-              # B4 BAO - 15 April 2019 11:30-13:30Hrs
-              # B3 BAO - 16 April 2019 09:30-11:30Hrs
-              # B3 OGI - 17 April 2019 09:30-11:30Hrs
-              
-              MAX Allowable time with marks deduction is 1 Hour.
-              
-All the Best!!
+
+
+
 
 
 
